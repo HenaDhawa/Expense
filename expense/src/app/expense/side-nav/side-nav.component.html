@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>
+            MEANiacs
+        </h2>
+    </div>
+    
+    <div>
+        <div class="toggle-button-row" (click)="toggleSlideOut()">
+          <mat-icon><i class="fa fa-bars" style="font-size:24px"></i></mat-icon>
+        </div>
+    </div>
+    
+    
+    <div class="slide-out-panel" [class.slide-out]="isSlideOut">
+        <div class="slide-out-content">
+          <h3 class="nav">Expense Tracker</h3>
+          <p class="edit-col" (click)="onDash()">Dashboard</p>
+          <p class="edit-col" (click)="onProfile()">Profile</p>
+          <p class="edit-col" (click)="onHistory()">Prev History</p>
+          <p class="edit-col" (click)="onLogout()">Log Out</p>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
